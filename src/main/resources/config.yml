@@ -1,0 +1,34 @@
+# --------------------------
+#  Signed Signs config file
+# --------------------------
+
+# The format of the date on the sign
+# If left empty (set to []), no date will appear
+# THIS CAN INCLUDE MULTIPLE LINES!
+# Example with more precision: "MM/dd/yy h:mma"
+# See https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html for more format guidelines
+date-format:
+  - "MM/dd/yy"
+
+# The timezone you want the date to be for
+# If the timezone is set to DEFAULT, it will use the timezone that the server uses
+# List of valid timezones: https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/
+time-zone: "DEFAULT"
+
+# Format of the signature on the sign
+# If left empty (set to []), no signature will appear
+# THIS CAN INCLUDE MULTIPLE LINES!
+signature-format:
+  - "&o- %player_name%"
+
+# Can either be DATE-FIRST or SIGNATURE-FIRST
+format-order: "DATE-FIRST"
+
+# Allows players to sign signs anonymously
+anonymous-signing: false
+
+# What signature shows up when an anonymous sign is signed
+anonymous-signature: "Anonymous"
+
+# Whether empty signs should be signed or not
+sign-empty-signs: false

@@ -1,0 +1,9 @@
+name: SignedSigns
+version: '${project.version}'
+main: org.tenmillionapples.signedsigns.SignedSigns
+author: 'TenMillionApples'
+permissions:
+  signedsigns.nosigning:
+    description: "Player won't sign signs"
+  signedsigns.anonymoussigning:
+    description: 'Player can sign signs anonymously'
