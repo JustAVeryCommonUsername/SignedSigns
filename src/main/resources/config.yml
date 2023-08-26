@@ -8,7 +8,10 @@
 # Example with more precision: "MM/dd/yy h:mma"
 # See https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html for more format guidelines
 date-format:
-  - "MM/dd/yy"
+  normal-signs:
+    - "MM/dd/yy"
+  hanging-signs:
+    - "MM/dd/yy"
 
 # The timezone you want the date to be for
 # If the timezone is set to DEFAULT, it will use the timezone that the server uses
@@ -19,7 +22,9 @@ time-zone: "DEFAULT"
 # If left empty (set to []), no signature will appear
 # THIS CAN INCLUDE MULTIPLE LINES!
 signature-format:
-  - "&o- %player_name%"
+  normal-signs:
+    - "&o- %player_name%"
+  hanging-signs: []
 
 # Can either be DATE-FIRST or SIGNATURE-FIRST
 format-order: "DATE-FIRST"

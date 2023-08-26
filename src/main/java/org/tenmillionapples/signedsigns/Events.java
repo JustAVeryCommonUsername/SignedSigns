@@ -56,10 +56,12 @@ public class Events implements Listener {
             if (empty)
                 return;
         }
+        boolean hanging = e.getBlock().getType().name().endsWith("_HANGING_SIGN");
+        String signType = hanging ? "hanging-signs" : "normal-signs";
 
         // Get configuration
-        List<String> date = config.getStringList("date-format");
-        List<String> signature = config.getStringList("signature-format");
+        List<String> date = config.getStringList("date-format." + signType);
+        List<String> signature = config.getStringList("signature-format." + signType);
         String timezoneFormat = config.getString("time-zone");
         String formatOrder = config.getString("format-order");
 
