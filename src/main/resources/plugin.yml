@@ -2,6 +2,7 @@ name: SignedSigns
 version: '${project.version}'
 main: org.tenmillionapples.signedsigns.SignedSigns
 author: 'TenMillionApples'
+api-version: '1.20'
 permissions:
   signedsigns.nosigning:
     description: "Player won't sign signs"
